@@ -6,8 +6,9 @@ git stash
 git checkout develop
 
 # Build new files
-stack exec korayal-github-io clean
-stack exec korayal-github-io build
+stack build
+stack exec site clean
+stack exec site build
 
 # Get previous files
 git fetch --all
